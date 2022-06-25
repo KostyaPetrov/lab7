@@ -18,12 +18,11 @@ import static common.io.OutputManager.print;
 public class Main {
     public static void main(String[] args) throws Exception {
         System.setOut(new PrintStream(System.out, true, "UTF-8"));
-        //args = new String[]{"4445","ttt"};
         int port = 0;
         String strPort = "4445";
         String dbHost = "pg";
-        String user = "s339742";
-        String password = "bwt369";
+        String user = "";
+        String password = "";
         String url = "jdbc:postgresql://" + dbHost + ":5432/studs";
 
         try {

@@ -9,9 +9,7 @@ import common.exceptions.*;
 import static common.io.OutputManager.*;
 
 
-public class Main {
-    //public static Logger logger = LogManager.getLogger("logger");
-    //static final Logger logger = LogManager.getRootLogger();
+public class Main {;
     public static void main(String[] args) throws Exception {
 
 
