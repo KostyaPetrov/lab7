@@ -21,8 +21,8 @@ public class Main {
         int port = 0;
         String strPort = "4445";
         String dbHost = "pg";
-        String user = "";
-        String password = "";
+        String user = "s339742";
+        String password = "bwt369";
         String url = "jdbc:postgresql://" + dbHost + ":5432/studs";
 
         try {
