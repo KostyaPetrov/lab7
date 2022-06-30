@@ -64,8 +64,8 @@ public class ServerCommandManager extends CommandManager {
                     user = server.getHostUser();
                     msg.setUser(user);
                 }
-                if (user == null) throw new AuthException();
-                if (!userManager.isValid(user)) throw new AuthException();
+//                if (user == null) throw new AuthException();
+//                if (!userManager.isValid(user)) throw new AuthException();
 
                 //link user to worker
                 Worker worker = msg.getWorker();
@@ -74,7 +74,8 @@ public class ServerCommandManager extends CommandManager {
 
             //executing command
             res = (AnswerMsg) super.runCommand(msg);
-        } catch (ConnectionException | CommandException e) {
+        } catch ( CommandException e) {
+            //ConnectionException |
             res.error(e.getMessage());
         }
         String message = "";

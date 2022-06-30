@@ -11,6 +11,6 @@ public class HelpCommand extends CommandImpl {
 
     @Override
     public String execute() {
-        return (CommandManager.getHelp());
+        return (CommandManager.getServerHelp());
     }
 }
